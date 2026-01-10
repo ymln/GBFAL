@@ -43,15 +43,15 @@
 	content-visibility: auto-pointer-events; 
     contain-intrinsic-size: 80px;
 	/* related to dragging feature */
-	touch-action: pan-y;
+	touch-action: none;
     -webkit-user-drag: none;
 }
 
 #spark-main {
 	width: 100%;
 	max-width: 100%;
-	height: calc((100% - 52px * 2) * 0.75);
-	max-height: calc((100% - 52px * 2) * 0.75);
+	height: calc(100% - 268px);
+	max-height: calc(100% - 268px);
 }
 
 #spark-main-table {
@@ -147,9 +147,8 @@ td {
 
 .spark-select {
 	width: 100%;
-	height: calc((100% - 52px * 2)* 0.25);
-	overflow-x: hidden;
-	overflow-y: scroll;
+	height: 168px;
+	overflow: hidden;
 	contain: strict;
 }
 
@@ -331,6 +330,15 @@ td {
 		.spark-manual {
 			font-size: 24px;
 		}
+
+		#spark-main {
+			height: calc(100% - 228px);
+			max-height: calc(100% - 228px);
+		}
+
+		.spark-select {
+			height: 128px;
+    }
 	}
 	@media (orientation: landscape) {
 	}
